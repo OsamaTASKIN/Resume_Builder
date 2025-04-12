@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <router-view />
+    <router-view /> <!-- renders the current route -->
   </div>
 </template>
 

@@ -5,6 +5,7 @@ import ContentCorrection from '../views/ContentCorrection.vue'
 import Signup from '../views/Signup.vue';
 import Login from '../views/login.vue';
 import AuthPage from '../views/AuthPage.vue'
+import Contact from '../views/Contact.vue'
 
 
 
@@ -25,8 +26,9 @@ const routes = [
   { path: '/signup', component: Signup },
   { path: '/auth', component: AuthPage },
   
-  
-  
+
+  {
+    path: '/contact', component:Contact}
 ]
 
 

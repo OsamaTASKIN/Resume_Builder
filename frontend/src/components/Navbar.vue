@@ -9,7 +9,9 @@
         <router-link to="/" class="text-white hover:text-blue-500">Home</router-link>
 <router-link to="/builder" class="text-white hover:text-blue-500">Resume</router-link>
 <router-link to="/correction" class="text-white hover:text-blue-500">Content Correction</router-link>
-<a href="#" class="text-white hover:text-blue-500">Contact Us</a>
+<router-link to="/contact" class="text-white hover:text-blue-500">Contact Us</router-link>
+
+
 
 
         <div v-if="userEmail" class="flex items-center space-x-4">
