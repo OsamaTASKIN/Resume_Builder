@@ -13,11 +13,6 @@ const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/builder', name: 'ResumeBuilder', component: ResumeBuilder },
   {
-    path: '/builder',
-    name: 'ResumeBuilder',
-    component: ResumeBuilder
-  },
-  {
     path: '/correction',
     name: 'ContentCorrection',
     component: ContentCorrection

@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navbar />
-    <router-view /> <!-- renders the current route -->
+    <router-view /> <!-- This is where Home.vue or other pages will load -->
   </div>
 </template>
 

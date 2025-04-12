@@ -1,37 +1,6 @@
 <template>
   <div class="bg-gray-900 text-white font-inter">
-    <!-- Navbar -->
-    <nav class="w-full bg-gray-900 border-b border-gray-800 fixed z-50">
-    <div class="container max-w-screen-xl mx-auto px-6 py-4 flex items-center justify-between">
-      <div class="flex items-center">
-        <i class="fas fa-file-lines text-blue-500 text-2xl"></i>
-        <span class="ml-2 text-xl font-bold">ResumePlus</span>
-      </div>
-      <div class="hidden md:flex items-center space-x-8">
-        <router-link to="/" class="hover:text-blue-500">Home</router-link>
-        <router-link to="/builder" class="hover:text-blue-500">Resume</router-link>
-        <router-link to="/correction" class="hover:text-blue-500">Content Correction</router-link>
-        <a href="#" class="hover:text-blue-500">Contact Us</a>
-
-        <!-- Logged in -->
-        <div v-if="userEmail" class="flex items-center space-x-4">
-          <span class="text-sm text-white">Welcome, {{ userEmail }}</span>
-          <button @click="logout" class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-lg text-white">
-            Logout
-          </button>
-        </div>
-
-        <!-- Not logged in -->
-        <router-link
-          v-else
-          to="/auth"
-          class="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-lg text-white text-center"
-        >
-          Sign In
-        </router-link>
-      </div>
-    </div>
-  </nav>
+   
 
     <!-- Header Section -->
     <section class="pt-28 pb-20 w-full text-center">
