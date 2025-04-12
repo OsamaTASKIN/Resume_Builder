@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, signOut } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { auth, db } from "../firebase";
 
@@ -32,11 +32,15 @@ export default {
           createdAt: new Date()
         });
 
-        this.message = "Account created successfully!";
+        await signOut(auth); // ❌ Sign out immediately after account creation
+        this.message = "Account created successfully! Please log in.";
+
+        this.$router.push("/auth"); // ✅ Redirect to login page
       } catch (error) {
         this.message = error.message;
       }
     }
   }
 };
+
 </script>
